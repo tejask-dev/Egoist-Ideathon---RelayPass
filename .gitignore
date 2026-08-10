@@ -1,0 +1,42 @@
+# dependencies
+/node_modules
+
+# Next.js
+/.next
+/out
+
+# test and build output
+/coverage
+*.tsbuildinfo
+next-env.d.ts
+
+# local configuration
+.env*
+!.env.example
+/.vercel
+/.supabase
+
+# credentials and private key material
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+
+# generated review, browser, and test artifacts
+/tmp
+/browser-artifacts
+/screenshots
+/recordings
+/playwright-report
+/test-results
+*.har
+*.log
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+
+# local reference material (not part of the public submission)
+/docs/*.pdf
