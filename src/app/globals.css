@@ -792,17 +792,23 @@ code {
   font-size: var(--text-xs);
 }
 
+/*
+ * Sits under the passport card, aligned to its right edge. It used to be
+ * pinned into the 62px gutter beside the card, which is narrower than the
+ * caption, so the text ran back over the card and off the viewport.
+ */
 .passport-callout {
   position: absolute;
-  right: -5px;
-  bottom: 58px;
+  right: 62px;
+  bottom: 2px;
   z-index: 3;
   display: flex;
   align-items: center;
   gap: 9px;
   color: var(--muted);
   font-size: var(--text-base);
-  line-height: 1.45;
+  line-height: 1.4;
+  white-space: nowrap;
 }
 
 .passport-callout p {
