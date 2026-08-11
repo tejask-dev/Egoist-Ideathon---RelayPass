@@ -40,3 +40,4 @@ Thumbs.db
 
 # local reference material (not part of the public submission)
 /docs/*.pdf
+/supabase/.temp
