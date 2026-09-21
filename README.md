@@ -98,7 +98,7 @@ See [the architecture and threat model](docs/ARCHITECTURE.md) and [the technical
 
 ## Tests
 
-The current suite contains **108 tests** covering attenuation, signatures, verifier binding, replay, disclosure, limits, revocation, receipts, concurrency, cold reconstruction, and session isolation.
+The current suite contains **164 tests** covering attenuation, signatures, verifier binding, replay, disclosure, limits, revocation, receipts, concurrency, cold reconstruction, and session isolation.
 
 ```bash
 npm run test
@@ -106,6 +106,8 @@ npm run lint
 npm run typecheck
 npm run build
 ```
+
+[GitHub Actions CI](https://github.com/tejask-dev/Egoist-Ideathon---RelayPass/actions/workflows/ci.yml) runs these four checks for every pull request and push to `main`. It installs locked dependencies with `npm ci` and uses the Node.js range in `package.json` (`>=22.12 <23`). CI needs no production credentials; deployment smoke checks remain a separate step.
 
 After deployment, exercise the real HTTP boundary with two isolated cookie jars:
 
